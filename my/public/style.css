@@ -1,0 +1,201 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #002147; /* Oxford Blue */
+  color: #fff;
+}
+
+.logo img {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.nav-toggle {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  transition: opacity 250ms ease;
+}
+.nav-toggle:focus,
+.nav-toggle:hover {
+opacity: .75;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+}
+
+.nav__item {
+  margin-left: 1rem;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav__link:hover {
+  color: #f39c12; /* Highlight color */
+}
+
+.hamburger{
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white
+}
+.hamburger::before,
+.hamburger::after{
+content: '';
+width: 100%;
+}
+.hamburger::before{transform: translateY(-6px);}
+.hamburger::after{transform: tanslateY(3px);}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: #f4f4f4;
+}
+
+.section__title--intro {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.intro__img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+/* Portfolio Items Section */
+.portfolio {
+  padding: 4rem 1rem;
+}
+
+.section__title--portfolio {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.portfolio__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.portfolio__item {
+  flex: 1 1 300px;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.portfolio__img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio__description {
+  padding: 1rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #002147; /* Oxford Blue */
+  color: #fff;
+}
+
+.footer__link {
+  color: #f39c12;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.social-list__item {
+  margin: 0 0.5rem;
+}
+
+.social-list__link {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.social-list__link:hover {
+  color: #f39c12;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+      visbility: visible;
+      height: auto;
+      position: relative;
+  }
+
+  .nav-toggle {
+      display: none;
+  }
+
+  .nav__list {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .portfolio__items {
+      flex-direction: column;
+      align-items: center;
+  }
+}
