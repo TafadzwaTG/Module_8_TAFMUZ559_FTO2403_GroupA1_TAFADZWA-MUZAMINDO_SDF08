@@ -1,21 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DevTafadzwa Portfolio Website</title>
-        <link rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTafadzwa Portfolio Website</title>
+    <meta name="description" content="Portfolio of DevTafadzwa showcasing various projects and skills.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../src/assets/img/devtafadzwa.jpg" alt="DevTafadzwa Logo">
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <section class="intro" id="home">
+        <h1 class="section__title">Welcome to My Portfolio</h1>
+        <p class="section__subtitle">Explore my projects and skills</p>
+        <img src="../src/assets/img/IMG_2235.JPG" alt="Introduction Image" class="intro__img">
+    </section>
 
-    <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <div id="root"></div>
-     
-    <script type="module" src="./index.jsx"></script>
-    </body>
-</html>
+    <section class="projects" id="projects">
+        <h2 class="section__title">My Projects</h2>
+        <div class="project__items">
+            <article class="project">
+                <img src="../src/assets/img/portfolio-01.jpg" alt="Project 1" class="project__img">
+                <h3 class="project__title">Project 1</h3>
+                <p class="project__description">A brief description of Project 1. Technologies used: HTML, CSS, JavaScript.</p>
+                <a href="https://github.com/username/project1" class="project__link">View Project</a>
+            </article>
+            <article class="project">
+                <img src="../src/assets/img/portfolio-02.jpg" alt="Project 2" class="project__img">
+                <h3 class="project__title">Project 2</h3>
+                <p class="project__description">A brief description of Project 2. Technologies used: React, Node.js.</p>
+                <a href="https://github.com/username/project2" class="project__link">View Project</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="section__title">About Me</h2>
+        <p>Hi, I’m DevTafadzwa, a web developer with experience in creating dynamic and responsive websites. I specialize in HTML, CSS, JavaScript, and React.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <p>If you have any questions or want to work together, feel free to reach out!</p>
+        <a href="mailto:devtafadzwa@example.com" class="contact__link">Email Me</a>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 DevTafadzwa. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
