@@ -138,7 +138,7 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 100vh;
-  background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../src/assets/img/depositphotos_12085162-stock-illustration-blue-abstract-background-vector-illustration.jpg') no-repeat center center;
+  background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../src/assets/img/bg.jpg') no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
